@@ -3,7 +3,8 @@
   background-image: url("assets/backgrounds/background.png");
   background-repeat: no-repeat;
   background-position: center;
-  height: 640px;
+  background-size: cover;
+  height: 100vh;
   max-width: 100%;
   padding: 5px;
   flex-direction: column;
@@ -16,6 +17,13 @@
 
 .main-wrapper {
   padding: 10px;
+}
+
+@media (max-width: 1024px) and (min-width: 650px) {
+  .app-wrapper {
+    background-image: url("assets/backgrounds/background_empty.png");
+  }
+
 }
 
 @media (max-width: 650px) {
