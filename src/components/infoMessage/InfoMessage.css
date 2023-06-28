@@ -1,0 +1,61 @@
+.infoMessage-wrapper {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.infoMessage-wrapper p {
+    color: #D8D9D9;
+}
+
+.infoMessage-wrapper:hover {
+    border-color: #202A34;
+}
+
+.infoMessage-wrapper-leftTop,
+.infoMessage-wrapper-leftBottom,
+.infoMessage-wrapper-rightTop,
+.infoMessage-wrapper-rightBottom {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 1024px) {
+    .infoMessage-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95vw;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .infoMessage-wrapper-leftTop,
+    .infoMessage-wrapper-leftBottom,
+    .infoMessage-wrapper-rightTop,
+    .infoMessage-wrapper-rightBottom {
+        width: 95vw;
+        height: auto;
+        display: flex;
+    }
+
+    .infoMessage-wrapper:hover {
+        border-color: #22599C;
+    }
+
+}
