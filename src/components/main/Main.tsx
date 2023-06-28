@@ -13,7 +13,7 @@ export const Main = () => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:8000/api/blocks/');
+            const response = await fetch('http://31.129.98.113:8000/api/blocks/');
             const jsonData = await response.json();
             setData(jsonData);
             console.log(jsonData)
